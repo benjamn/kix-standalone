@@ -1,0 +1,5 @@
+Google recently unveiled a radically improved rich text editor for use with Google Docs [1], apparently code-named Kix.  Although they have not released the source code for this editor, nor have they stated any intention of doing so, Google's record of open-source releases (Chromium, Etherpad, &c.) gives me hope that they will some day share their innovations with the broader community of web developers.
+
+Until that day arrives, this repository represents an experiment in turning Kix into a standalone editor.  If this experiment violates Google's terms of service, I must plead ignorance.  Ask me to take it down and I will readily comply, as I mean no harm to Google.
+
+[1] http://googledocs.blogspot.com/2010/05/whats-different-about-new-google-docs.html
