@@ -1,0 +1,329 @@
+<html>
+	<head>
+		<link href='css/kix.css' type='text/css' rel='stylesheet' />
+		<script type="text/javascript" src="js/kix_core.js"></script>
+	</head>
+	<body>
+		<div id="docs-chrome">
+			<div id="docs-bars">
+				<div id="docs-menubar" role="menubar" class="docs-menubar goog-container goog-container-horizontal" tabindex="0">
+					<div id="docs-file-menu" role="menuitem" class="menu-button goog-control goog-control-disabled goog-inline-block">
+						File
+					</div>
+					<div id="docs-edit-menu" role="menuitem" class="menu-button goog-control goog-control-disabled goog-inline-block">
+						Edit
+					</div>
+					<div id="docs-view-menu" role="menuitem" class="menu-button goog-control goog-control-disabled goog-inline-block">
+						View
+					</div>
+					<div id="docs-insert-menu" role="menuitem" class="menu-button goog-control goog-control-disabled goog-inline-block">
+						Insert
+					</div>
+					<div id="docs-format-menu" role="menuitem" class="menu-button goog-control goog-control-disabled goog-inline-block">
+						Format
+					</div>
+					<div id="docs-tools-menu" role="menuitem" class="menu-button goog-control goog-control-disabled goog-inline-block">
+						Tools
+					</div>
+					<div id="docs-table-menu" role="menuitem" class="menu-button goog-control goog-control-disabled goog-inline-block">
+						Table
+					</div>
+					<div id="docs-help-menu" role="menuitem" class="menu-button goog-control goog-control-disabled goog-inline-block">
+						Help
+					</div>
+					<div id="docs-presence" style="display:none"></div>
+				</div>
+				<div id="docs-toolbar" class="goog-toolbar" tabindex="0">
+					<div id="printButton" class="goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-print">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="undoButton" class="goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-undo">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="redoButton" class="goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-redo">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="cloudboardMenuButton" class="goog-toolbar-menu-button goog-toolbar-menu-button goog-toolbar-menu-button-disabled goog-inline-block">
+						<div class="goog-toolbar-menu-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-menu-button-inner-box goog-inline-block">
+								<div class="goog-toolbar-menu-button-caption goog-inline-block">
+									<div class="docs-icon goog-inline-block">
+										<div class="docs-icon-img-container docs-icon-img docs-icon-clipboard">
+											&nbsp;
+										</div>
+									</div>
+								</div>
+								<div class="goog-toolbar-menu-button-dropdown goog-inline-block">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="headingStyleSelect" class="goog-toolbar-select goog-toolbar-menu-button goog-toolbar-menu-button-disabled goog-inline-block">
+						<div class="goog-toolbar-menu-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-menu-button-inner-box goog-inline-block">
+								<div class="goog-toolbar-menu-button-caption goog-inline-block">
+									&nbsp;
+								</div>
+								<div class="goog-toolbar-menu-button-dropdown goog-inline-block">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="fontFamilySelect" class="goog-toolbar-select goog-toolbar-menu-button goog-toolbar-menu-button-disabled goog-inline-block">
+						<div class="goog-toolbar-menu-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-menu-button-inner-box goog-inline-block">
+								<div class="goog-toolbar-menu-button-caption goog-inline-block">
+									&nbsp;
+								</div>
+								<div class="goog-toolbar-menu-button-dropdown goog-inline-block">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="fontSizeSelect" class="goog-toolbar-select goog-toolbar-menu-button goog-toolbar-menu-button-disabled goog-inline-block">
+						<div class="goog-toolbar-menu-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-menu-button-inner-box goog-inline-block">
+								<div class="goog-toolbar-menu-button-caption goog-inline-block">
+									&nbsp;
+								</div>
+								<div class="goog-toolbar-menu-button-dropdown goog-inline-block">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="boldButton" class="goog-toolbar-toggle-button goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-bold">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="italicButton" class="goog-toolbar-toggle-button goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-italic">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="underlineButton" class="goog-toolbar-toggle-button goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-underline">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="foregroundColorButton" class="goog-toolbar-color-menu-button goog-toolbar-menu-button goog-toolbar-menu-button-disabled goog-inline-block">
+						<div class="goog-toolbar-menu-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-menu-button-inner-box goog-inline-block">
+								<div class="goog-toolbar-menu-button-caption goog-inline-block">
+									<div class="goog-color-menu-button-indicator">
+										<div class="docs-icon goog-inline-block">
+											<div class="docs-icon-img-container docs-icon-img docs-icon-text-color">
+												&nbsp;
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="goog-toolbar-menu-button-dropdown goog-inline-block">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="backgroundColorButton" class="goog-toolbar-color-menu-button goog-toolbar-menu-button goog-toolbar-menu-button-disabled goog-inline-block">
+						<div class="goog-toolbar-menu-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-menu-button-inner-box goog-inline-block">
+								<div class="goog-toolbar-menu-button-caption goog-inline-block">
+									<div class="goog-color-menu-button-indicator">
+										<div class="docs-icon goog-inline-block">
+											<div class="docs-icon-img-container docs-icon-img docs-icon-text-bgcolor">
+												&nbsp;
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="goog-toolbar-menu-button-dropdown goog-inline-block">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goog-toolbar-separator goog-inline-block">
+						&nbsp;
+					</div>
+					<div id="insertLinkButton" class="goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container kix-icon-accessible-img kix-icon-insert-link">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="insertImageButton" class="goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-image">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goog-toolbar-separator goog-inline-block">
+						&nbsp;
+					</div>
+					<div id="addNumberedBulletButton" class="goog-toolbar-toggle-button goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-list-number">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="addBulletButton" class="goog-toolbar-toggle-button goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-list-bullet">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="outdentButton" class="goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-outdent">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="indentButton" class="goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-indent">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="alignLeftButton" class="goog-toolbar-toggle-button goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-align-left">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="alignCenterButton" class="goog-toolbar-toggle-button goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-align-center">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="alignRightButton" class="goog-toolbar-toggle-button goog-toolbar-button goog-toolbar-button-disabled goog-inline-block">
+						<div class="goog-toolbar-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-button-inner-box goog-inline-block">
+								<div class="docs-icon goog-inline-block">
+									<div class="docs-icon-img-container docs-icon-img docs-icon-align-right">
+										&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="lineSpacingMenuButton" class="goog-toolbar-menu-button goog-toolbar-menu-button goog-toolbar-menu-button-disabled goog-inline-block">
+						<div class="goog-toolbar-menu-button-outer-box goog-inline-block">
+							<div class="goog-toolbar-menu-button-inner-box goog-inline-block">
+								<div class="goog-toolbar-menu-button-caption goog-inline-block">
+									<div class="docs-icon goog-inline-block">
+										<div class="docs-icon-img-container kix-icon-accessible-img kix-icon-line-spacing">
+											&nbsp;
+										</div>
+									</div>
+								</div>
+								<div class="goog-toolbar-menu-button-dropdown goog-inline-block">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="docs-editor-container">
+			<div id="docs-editor">
+				<div class="kix-unprintable">
+					<div id="kix-appview" class="kix-appview">
+						<div class="kix-rulerview">
+							<div class="kix-rulerview-inner"></div>
+						</div>
+						<div class="kix-appview-editor"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/init.js"></script>
+	</body>
+</html>

@@ -1,0 +1,115 @@
+var KX_kixApp;
+var KX_disposer;
+
+function KX_startKix() {
+    KX_disposer = function () {
+        KX_kixApp = null;
+    };
+    _initializeModules({
+        "kix_core": [],
+        "kix_app": ["kix_core"],
+        "kix_jstex": ["kix_core"]
+    }, {
+        "kix_core": ["js/kix_core.js"],
+        "kix_app": ["js/kix_app.js"],
+        "kix_jstex": ["js/kix_jstex.js"]
+    }, 'kix_core');
+    var config = {
+        'am': 4,
+        'bl': '20101507-36-RC3',
+        'cpn': 15,
+        'crn': 15,
+        'csie': [],
+        'docid': '1cvpdwalTnnKrvnNfWwsFl0FhRroACH5uY0_pfciZqWI',
+        'domain': '',
+        'durl': 'http://docs.google.com/drawings',
+        'ear': true,
+        'eac': true,
+        'ebc': false,
+        'ebk': true,
+        'ec': true,
+        'ecm': true,
+        'ecb': true,
+        'ecqs': false,
+        'ecer': true,
+        'ecs': false,
+        'ecsc': true,
+        'ecd': true,
+        'ecdx': false,
+        'ecsi': true,
+        'edm': false,
+        'edlr': true,
+        'ed': true,
+        'edr': true,
+        'eeafc': true,
+        'eeq': true,
+        'eex': true,
+        'eff': true,
+        'efr': true,
+        'efayt': true,
+        'ef': true,
+        'ehf': true,
+        'eis': true,
+        'eir': true,
+        'eipad': false,
+        'ej': true,
+        'element': document.getElementById('docs-editor'),
+        'els': false,
+        'elis': false,
+        'eld': true,
+        'email': 'kixfork@gmail.com',
+        'em': false,
+        'enc': false,
+        'ens': true,
+        'ep': true,
+        'epb': true,
+        'epcol': true,
+        'epset': true,
+        'epc': false,
+        'epf': false,
+        'epps': true,
+        'eps': true,
+        'epub': true,
+        'er': true,
+        'erts': true,
+        'erh': true,
+        'erd': false,
+        'ertl': true,
+        'esco': false,
+        'esvcm': true,
+        'essus': true,
+        'esc': true,
+        'est': false,
+        'esud': false,
+        'etoc': true,
+        'etrs': false,
+        'ets': true,
+        'et': true,
+        'etcq': false,
+        'etm': true,
+        'etr': true,
+        'eu': true,
+        'eupc': false,
+        'ewc': true,
+        'ewd': false,
+        'ewf': false,
+        'map': 16,
+        'mip': 14,
+        'iiu': 'https://docs.google.com/picker?protocol\x3dgadgets\x26relayUrl\x3dhttps://docs.google.com/relay.html\x26hostId\x3dkix\x26title\x3dInsert+image\x26authuser\x3d0\x26thumbs\x3d72,640\x26nav\x3d((%22upload%22,null,%7B%22query%22:%22document%22,%22data%22:%7B%22containingCosmoId%22:%221cvpdwalTnnKrvnNfWwsFl0FhRroACH5uY0_pfciZqWI%22%7D%7D),(%22url%22,null,%7B%22preview%22:%22true%22%7D),(%22image-search%22,null,%7B%22license%22:%22crwm%22%7D))',
+        'l': 'en',
+        'odu': 'https://docs.google.com/picker?protocol\x3dgadgets\x26relayUrl\x3dhttps://docs.google.com/relay.html\x26hostId\x3dkix\x26title\x3dSelect+document+to+import\x26authuser\x3d0\x26navHidden\x3dtrue\x26nav\x3d((%22upload%22,null,%7B%22query%22:%22docs%22,%22data%22:%7B%22importTo%22:%22kix%22%7D%7D))',
+        'ogi': '03328383441068557129',
+        'psi': 'kix',
+        'rtl': false,
+        'ud': '',
+        'up': '/document',
+        'upd': false,
+        'un': 'kixfork'
+    };
+    config['ci'] = true;
+    var imageUrls = {};
+    KX_kixApp = _createKixApplication('5cd55aff016f86bb', config, '', true, imageUrls);
+}
+KX_startKix();
+KX_kixApp.attachDocumentHandlers(document.body, KX_disposer);
+KX_kixApp.setLoaded();
